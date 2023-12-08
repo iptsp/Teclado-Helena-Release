@@ -28,7 +28,7 @@ Compilar o projeto irá gerar um pacote MSIX que pode ser usado como instalador 
 Como regra geral, todos os pacotes MSIX devem ser assinados com um certificado válido de assinatura de código antes de poderem ser instalados.
 
 Para fins de desenvolvimento, um certificado autoassinado está incluído neste repositório.
-Se houver necessidade de gerar outro certificado autoassinado, consulte [Gerando um certificado de assinatura de código autoassinado_](#Gerando-um-certificado-de-assinatura-de-código-autoassinado).
+Se houver necessidade de gerar outro certificado autoassinado, consulte [Gerando um certificado de assinatura de código autoassinado](#Gerando-um-certificado-de-assinatura-de-código-autoassinado).
 
 > [AVISO!]
 > O certificado autoassinado incluído destina-se apenas a fins de desenvolvimento. Não deve ser utilizado em produção.
@@ -44,7 +44,7 @@ Se estiver utilizando o certificado autoassinado incluído, este valor não prec
 
 4. Como administrador, execute ```mvn clean install```. Executar sem privilégios administrativos impedirá a ferramenta de assinatura de encontrar o certificado.
 
-> [IMPORTANT!]
+> [IMPORTANTE!]
 > Se o pacote MSIX foi assinado com um certificado autoassinado, o certificado também deve ser instalado na máquina de destino.
 >
 > Consulte [Instalando um certificado autoassinado de um pacote MSIX](#Instalando-um-certificado-autoassinado-de-um-pacote-MSIX).
@@ -76,7 +76,7 @@ Copie o arquivo PFX gerado de `$user_home\THL.pfx` para  `server\jpackage\certif
 <details open>
 <summary><b>Opção 1: Pelo CLI</b></summary>
 
-1. De um prompt do PowerShell elevado, execute o seguinte comando:
+1. De um prompt do PowerShell executado como administrador, execute o seguinte comando:
    ```
    Import-PfxCertificate -FilePath '.\server\jpackage\certificate\THL.pfx' -CertStoreLocation 'Cert:\LocalMachine\My' -Password (ConvertTo-SecureString '!thl!321#' -AsPlainText -Force)
    ```
