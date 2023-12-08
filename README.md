@@ -22,8 +22,8 @@ Importe este repositório como um projeto Maven em seu IDE preferido.
 Execute a classe ```br.ipt.thl.Entrypoint``` como aplicação Java com opções de vm:
 ```-Dthl.version=dev -Dspring.profiles.active=dev -Djavafx.preloader=br.ipt.thl.UiApplicationSplashScreen -Xms512m -Xmx1g```
 
-## Construção
-Construir o projeto irá gerar um pacote MSIX que pode ser usado como instalador para computadores Windows.
+## Compilação
+Compilar o projeto irá gerar um pacote MSIX que pode ser usado como instalador para computadores Windows.
 
 Como regra geral, todos os pacotes MSIX devem ser assinados com um certificado válido de assinatura de código antes de poderem ser instalados.
 
@@ -55,7 +55,7 @@ Se estiver utilizando o certificado autoassinado incluído, este valor não prec
 
 ### Gerando um certificado de assinatura de código autoassinado
 
-O processo de construção requer um certificado de assinatura de código para assinar os executáveis e o pacote MSIX.
+O processo de compilação requer um certificado de assinatura de código para assinar os executáveis e o pacote MSIX.
 
 Se um certificado de assinatura de código válido não estiver disponível, um certificado autoassinado pode ser criado por meio dos passos abaixo para fins de desenvolvimento.
 
