@@ -78,7 +78,8 @@ npm run start
 ### Executando o servidor
 Importe o repositório como um projeto Maven na sua IDE de preferência (Ex.: IntelliJ, VSCode, Eclipse)
 Execute a classe ```br.ipt.thl.Entrypoint``` como uma aplicação JAVA.
-Habilite o **vm options** e coloque as seguintes opções: 
+
+Habilite o **`vm options`** e coloque as seguintes opções: 
 ```-Dthl.version=dev -Dspring.profiles.active=dev -Djavafx.preloader=br.ipt.thl.UiApplicationSplashScreen -Xms512m -Xmx1g```
 
 ## Compilação
@@ -147,11 +148,11 @@ Copie o arquivo PFX gerado de `$user_home\THL.pfx` para `server\jpackage\certifi
 <summary><b>Opção 2: Pela Interface Gráfica (GUI)</b></summary>
 
 1. Dê um duplo clique no arquivo `server\jpackage\certificate\THL.pfx` para abrir o Assistente de Importação de Certificado.
-2. Selecione **Máquina Local** como local do repositório, clique em **Avançar**.
-3. Clique em **Avançar**.
-4. Digite `!thl!321#` como senha, clique em **Avançar**.
-5. Selecione "Selecionar automaticamente o repositório de certificados com base no tipo de certificado", clique em **Avançar**.
-6. Clique em **Concluir**.
+2. Selecione **`Máquina Local`** como local do repositório, clique em **`Avançar`**.
+3. Clique em **`Avançar`**.
+4. Digite `!thl!321#` como senha, clique em **`Avançar`**.
+5. Selecione `Selecionar automaticamente o repositório de certificados com base no tipo de certificado`, clique em **`Avançar`**.
+6. Clique em **`Concluir`**.
 
 </details>
 
@@ -160,6 +161,7 @@ Copie o arquivo PFX gerado de `$user_home\THL.pfx` para `server\jpackage\certifi
 Para instalar pacotes MSIX que foram assinados com um certificado autoassinado, é necessário confiar nessa assinatura instalando o certificado no repositório de certificados ```Cert:\LocalMachine\TrustedPeople``` certificate store.
 
 > [!AVISO]
+
 > Instalar um certificado autoassinado no Windows fará com que o sistema confie em todos os pacotes assinados com esse certificado, o que pode incluir alguns maliciosos.
 > 
 > É altamente recomendável desinstalar o certificado após os testes para garantir a segurança do seu sistema.
@@ -177,15 +179,15 @@ Substitua ```THL-0.2.msix``` pelo caminho para o arquivo MSIX.
 <details open>
 <summary><b>Opção 2: Pela Interface Gráfica (GUI)</b></summary>
 
-1. Clique com o **botão direito** do mouse no arquivo `.msix` e vá até **propriedades**.
-2. Na aba Assinaturas Digitais (Digital Signatures), selecione o certificado THL e clique em **Detalhes**.
-3. Na janela Detalhes de Assinatura Digital, clique em **Exibir Certificado**.
-4. Na janela Certificado, clique em **Instalar Certificado...**
-5. No Assistente de Importação de Certificado, selecione **"Máquina Local"** como local do repositório, clique em **Avançar**.
-6. Selecione **"Colocar todos os certificados no seguinte repositório"** e clique em **Procurar...**
-7. Selecione o repositório **"Pessoas Confiáveis"** e clique em **OK**.
-8. Clique em **Avançar**.
-9. Clique em **Concluir**.
+1. Clique com o **botão direito** do mouse no arquivo `.msix` e vá até **`Propriedades`**.
+2. Na aba Assinaturas Digitais (Digital Signatures), selecione o certificado THL e clique em **`Detalhes`**.
+3. Na janela Detalhes de Assinatura Digital, clique em **`Exibir Certificado`**.
+4. Na janela Certificado, clique em **`Instalar Certificado...`**
+5. No Assistente de Importação de Certificado, selecione **`Máquina Local`** como local do repositório, clique em **`Avançar`**.
+6. Selecione **`Colocar todos os certificados no seguinte repositório`** e clique em **`Procurar...`**
+7. Selecione o repositório **`Pessoas Confiáveis`** e clique em **`OK`**.
+8. Clique em **`Avançar`**.
+9. Clique em **`Concluir`**.
 
 </details>
 
